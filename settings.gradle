@@ -1,1 +1,3 @@
 include ':app'
+//greendao include工程
+include ':app', ':MyDaoGenerator'
