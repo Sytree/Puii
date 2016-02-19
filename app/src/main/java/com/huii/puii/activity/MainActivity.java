@@ -17,8 +17,12 @@ import dagger.Module;
 
 
 public class MainActivity extends AppCompatActivity {
+
+    //首页P按钮
     @Bind(R.id.button_new_plan)
     TextView button_new_plan;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

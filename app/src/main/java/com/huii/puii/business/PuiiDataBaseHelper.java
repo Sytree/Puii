@@ -18,7 +18,7 @@ public class PuiiDataBaseHelper extends DaoMaster.OpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         switch (oldVersion){
             case 1:
-                //创建新表，注意createTable()是静态方法
+                //创建新表，注意cr  eateTable()是静态方法
                 // SchoolDao.createTable(db, true);
 
                 // 加入新字段
