@@ -1,36 +1,29 @@
 package com.huii.puii.app;
 
 import android.app.Application;
-import android.database.sqlite.SQLiteDatabase;
-
-import com.huii.puii.business.PuiiDataBaseHelper;
-import com.puii.dao.DaoMaster;
-import com.puii.dao.DaoSession;
-
+import com.huii.puii.business.dagger.component.ApplicationComponent;
+import com.huii.puii.business.dagger.component.DaggerApplicationComponent;
+import com.huii.puii.business.dagger.module.ApplicationModule;
+import com.huii.puii.business.database.PuiiDatabaseLoader;
 /**
  * Created by yinlh on 2016/2/19.
  */
 public class PuiiApp extends Application {
 
-    public DaoSession daoSession;
+    private ApplicationComponent component;
+
+
     @Override
     public void onCreate() {
         super.onCreate();
-        setUpDatabase();
-    }
-    //初始化数据库
-    private void setUpDatabase() {
-//        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this, "example-db", null);
-//        SQLiteDatabase db = helper.getWritableDatabase();
-//        DaoMaster daoMaster = new DaoMaster(db);
-//        daoSession = daoMaster.newSession();
-        PuiiDataBaseHelper helper = new PuiiDataBaseHelper(getApplicationContext(),"puii-db",null);
-        SQLiteDatabase db = helper.getWritableDatabase();
-        DaoMaster daoMaster = new DaoMaster(db);
-        daoSession  = daoMaster.newSession();
+
+        //初始化数据库
+        PuiiDatabaseLoader.init(this);
     }
 
-    public DaoSession getDaoSession() {
-        return daoSession;
+    //dagger component 获取
+    public ApplicationComponent getComponent() {
+        this.component = DaggerApplicationComponent.builder().applicationModule(new ApplicationModule(this)).build();
+        return component;
     }
 }

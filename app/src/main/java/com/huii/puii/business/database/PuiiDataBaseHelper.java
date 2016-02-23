@@ -1,4 +1,4 @@
-package com.huii.puii.business;
+package com.huii.puii.business.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

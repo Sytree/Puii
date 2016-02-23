@@ -2,5 +2,9 @@
     <string name="app_name">Puii</string>
     <string name="action_settings">Settings</string>
     <!--添加新计划-->
-    <string name="add_new_plan">P</string>
+    <string name="add_new_plan">+P</string>
+    <!--计划-->
+    <string name="add_new_plan_plan">计划</string>
+    <!--书单-->
+    <string name="add_new_plan_booklist">书单</string>
 </resources>

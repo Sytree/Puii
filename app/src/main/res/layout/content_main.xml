@@ -28,5 +28,31 @@
             android:text="@string/add_new_plan"
             style="@style/icon_letter"
             />
+        <LinearLayout
+            android:id="@+id/extend_new_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/button_new_plan_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/icon_letter"
+                android:text="@string/add_new_plan_plan"/>
+            <ImageView
+                android:id="@+id/button_new_plan_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:src="@mipmap/cancel_72"/>
+            <TextView
+                android:id="@+id/button_new_plan_booklist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/icon_letter"
+                android:text="@string/add_new_plan_booklist"/>
+        </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

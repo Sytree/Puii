@@ -1,4 +1,4 @@
-package com.huii.puii.business.database;
+package com.huii.puii.business.database.daohelper;
 
 import java.util.List;
 
