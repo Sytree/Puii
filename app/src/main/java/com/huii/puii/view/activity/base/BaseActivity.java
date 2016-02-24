@@ -1,4 +1,4 @@
-package com.huii.puii.activity.base;
+package com.huii.puii.view.activity.base;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

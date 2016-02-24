@@ -1,6 +1,6 @@
 package com.huii.puii.business.dagger.component;
 
-import com.huii.puii.activity.MainActivity;
+import com.huii.puii.view.activity.MainActivity;
 import com.huii.puii.business.dagger.module.MainActivityModule;
 import com.huii.puii.business.dagger.scope.PerActivity;
 import com.huii.puii.presenter.MainActivityPresenter;

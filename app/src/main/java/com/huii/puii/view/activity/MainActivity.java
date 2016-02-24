@@ -1,4 +1,4 @@
-package com.huii.puii.activity;
+package com.huii.puii.view.activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,8 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.huii.puii.R;
-import com.huii.puii.activity.base.BaseActivity;
-import com.huii.puii.app.PuiiApp;
+import com.huii.puii.view.activity.base.BaseActivity;
 import com.huii.puii.business.dagger.component.ApplicationComponent;
 import com.huii.puii.business.dagger.component.DaggerMainActivityComponent;
 import com.huii.puii.business.dagger.module.MainActivityModule;

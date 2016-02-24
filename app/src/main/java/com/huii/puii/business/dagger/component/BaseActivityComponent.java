@@ -1,6 +1,6 @@
 package com.huii.puii.business.dagger.component;
 
-import com.huii.puii.activity.base.BaseActivity;
+import com.huii.puii.view.activity.base.BaseActivity;
 import com.huii.puii.business.dagger.module.BaseActivityModule;
 import com.huii.puii.business.dagger.scope.Base;
 

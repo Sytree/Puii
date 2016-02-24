@@ -1,10 +1,8 @@
 package com.huii.puii.business.dagger.module;
 
-import com.huii.puii.activity.MainActivity;
+import com.huii.puii.view.activity.MainActivity;
 import com.huii.puii.business.dagger.scope.PerActivity;
 import com.huii.puii.presenter.MainActivityPresenter;
-
-import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
