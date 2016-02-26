@@ -3,4 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!-- 大标题颜色-->
+    <color name="mainTitle">#46b5c4</color>
+    <!--副标题颜色-->
+    <color name="subTitle">#445770</color>
+    <!--主背景 白-->
+    <color name="mainBackground">#fefefe</color>
+    <!--分割线 深灰-->
+    <color name="deepGray_cutline">#898c98</color>
 </resources>
