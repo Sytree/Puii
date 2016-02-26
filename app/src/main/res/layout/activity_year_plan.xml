@@ -30,5 +30,6 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        style="@style/list_content"
         android:layout_below="@id/new_plan_plan_main_cutline"></android.support.v7.widget.RecyclerView>
 </RelativeLayout>
