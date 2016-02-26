@@ -28,6 +28,7 @@
         style="@style/main_cutline"
         android:layout_below="@id/sub_title_plan"/>
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/new_plan_plan_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         style="@style/list_content"

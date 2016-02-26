@@ -14,8 +14,11 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setUpComponent(((PuiiApp)getApplication()).getComponent());
+        setUpComponent(((PuiiApp) getApplication()).getComponent());
+        setUpView();
     }
+
+    protected abstract void setUpView();
 
     protected abstract void setUpComponent(ApplicationComponent appComponent);
 

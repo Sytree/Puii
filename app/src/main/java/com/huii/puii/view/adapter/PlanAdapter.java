@@ -23,10 +23,11 @@ public class PlanAdapter extends RecyclerView.Adapter<PlanAdapter.PlanViewHolder
     LayoutInflater inflater;
     List<YearPlanBean> list = new ArrayList<YearPlanBean>();
 
-    public PlanAdapter getIstance(Context mContext){
-        this.mContext = mContext;
-        inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        return this;
+    public static PlanAdapter getIstance(Context mContext){
+        PlanAdapter adapter = new PlanAdapter();
+        adapter.mContext = mContext;
+        adapter.inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        return adapter;
     }
 
     public void addData(List<YearPlanBean> list){
