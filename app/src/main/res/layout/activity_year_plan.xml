@@ -23,14 +23,12 @@
         android:layout_height="wrap_content"
         style="@style/subTitle"
         android:text="2016"/>
-    <include
-        layout="@layout/cutline"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_below="@id/sub_title_plan"
-        ></include>
+    <TextView
+        android:id="@+id/new_plan_plan_main_cutline"
+        style="@style/main_cutline"
+        android:layout_below="@id/sub_title_plan"/>
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/main_cutline"></android.support.v7.widget.RecyclerView>
+        android:layout_below="@id/new_plan_plan_main_cutline"></android.support.v7.widget.RecyclerView>
 </RelativeLayout>

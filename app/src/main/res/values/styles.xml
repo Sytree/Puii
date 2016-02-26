@@ -51,4 +51,15 @@
         <item name="android:layout_margin">16dp</item>
     </style>
 
+    <!--标题分割线-->
+    <style name="main_cutline">
+        <item name="android:background">@color/deepGray_cutline</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
 </resources>
