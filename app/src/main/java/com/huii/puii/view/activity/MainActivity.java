@@ -50,24 +50,24 @@ public class MainActivity extends BaseActivity {
 
     //+p按钮的单击操作
     @OnClick(R.id.button_new_plan)
-    private void onClickNewPlan(){
+    public void onClickNewPlan(){
         extend_new_plan.setVisibility(View.VISIBLE);
         button_new_plan.setVisibility(View.GONE);
     }
     //+p按钮取消展开
     @OnClick(R.id.button_new_plan_cancel)
-    private void onNewPlanCancel(){
+    public void onNewPlanCancel(){
         extend_new_plan.setVisibility(View.GONE);
         button_new_plan.setVisibility(View.VISIBLE);
     }
     //计划按钮
     @OnClick(R.id.button_new_plan_plan)
-    private void onClickPlan(){
+    public void onClickPlan(){
         // TODO: 2016/2/23
     }
     //书单按钮
     @OnClick(R.id.button_new_plan_booklist)
-    private void onClickBookList(){
+    public void onClickBookList(){
         // TODO: 2016/2/23
     }
 
